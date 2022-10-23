@@ -6,40 +6,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-<link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/temperature.css">
     <title>Calculations</title>
 </head>
 
 <body>
     <div class="container-fluid">
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-            <span class="fs-4">Calculations Website</span>
-          </a>
-    
-          <ul class="nav nav-pills">
-            <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="temperature.html" class="nav-link">Temperature</a></li>
-            <li class="nav-item"><a href="mortgage.html" class="nav-link">Mortgage</a></li>
-            <li class="nav-item"><a href="compoundinterest.html" class="nav-link">Compound Interest</a></li>
-            <li class="nav-item"><a href="annuity.html" class="nav-link">Annuity</a></li>
-          </ul>
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap" />
+                </svg>
+                <span class="fs-4">Calculations Website</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="temperature.html" class="nav-link">Temperature</a></li>
+                <li class="nav-item"><a href="mortgage.html" class="nav-link">Mortgage</a></li>
+                <li class="nav-item"><a href="compoundinterest.html" class="nav-link">Compound Interest</a></li>
+                <li class="nav-item"><a href="annuity.html" class="nav-link">Annuity</a></li>
+            </ul>
         </header>
-      </div>
-    
+        <div class="container-fluid jumbotron">
+            <div class="container">
+                <h1 class="h1" style="padding-top: 4em;">Temperature Calculator</h1>
+                <h2></h2>
+            </div>
+        </div>
+
+        <main>
+            <div class="container">
+                
+                <div class="container-fluid">
+                    <div style="padding-top: 1em;">
+                        <p style="font-size: 250%;"> Convert Degree from Fahrenheit to Celcius</p>
+                        <p style="font-size: 300%;"> Degree in Fahrenheit:</p>
+                        <input type="text" id="number1Field" />
+                    </div>
+
+                    <div>
+                        <input type="button" id="fahtocelBtn" value="Calculate">
+                    </div>
+
+                    <div>
+                        <p><input type="text" id="answerField1" /></p>
+                    </div>
+
+                    <div>
+                            <p style="font-size: 250%;"> Convert Degree from Celcius to Fahrenheit</p>
+                            <p style="font-size: 300%;"> Degree in Celcius:</p>
+                            <input type="text" id="number2Field" />
+                    </div>
+
+                    <div>
+                        <input type="button" id="celtofahBtn" value="Calculate">
+                    </div>
+
+                    <div>
+                        <p><input type="text" id="answerField2" /></p>
+                    </div>
 
 
-
-
- 
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous">
-    </script>
-    <script src="scripts/index.js"></script>
+                    </div>
+                </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+        </script>
+    <script src="scripts/temperature.js"></script>
 </body>
 
 </html>

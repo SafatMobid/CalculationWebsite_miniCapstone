@@ -1,0 +1,23 @@
+.jumbotron 
+  {
+    background: url(/images/Mortgageimage.jpg) no-repeat;
+    height: 40vh;
+    background-size: cover;
+  }
+
+  .bg1
+  {
+    background: linear-gradient(rgb(60, 109, 114), rgb(233, 233, 128));
+  }
+
+  .h1
+  {
+    justify-content: end;
+    font-size: 270%
+  }
+
+  .mortgageCalculator
+  {
+    padding-top: 3rem;
+    font-size: 150%;
+  }

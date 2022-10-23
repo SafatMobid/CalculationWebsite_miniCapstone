@@ -1,0 +1,7 @@
+.jumbotron 
+  {
+    background: url(/images/TempbarVector.jpg);
+    height: 40vh;
+    background-size: cover;
+    image-resolution: 10%;
+  }

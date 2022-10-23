@@ -1,0 +1,12 @@
+.jumbotron 
+  {
+    background: url(/images/CoinToPiggy.jpg) no-repeat;
+    height: 40vh;
+    background-size: cover;
+  }
+
+  .h1
+  {
+    justify-content: end;
+    font-size: 270%
+  }
